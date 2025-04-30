@@ -1,0 +1,43 @@
+.alertBox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  z-index: 20;
+
+  /* background-image: linear-gradient(to top, #f06b6b, #d6c481); */
+
+  border-radius: 5px;
+
+  width: 500px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: entry 0.5s ease-in 0s normal forwards;
+}
+
+.error {
+  background-color: rgb(233, 32, 66);
+}
+
+.message {
+  background-color: rgb(61, 201, 131);
+}
+
+.alertBox .content {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(46, 46, 46);
+}
+
+@keyframes entry {
+  from {
+    transform: translate(-50%, -20px);
+  }
+  to {
+    transform: translate(-50%, 10px);
+  }
+}

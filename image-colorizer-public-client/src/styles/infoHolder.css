@@ -1,0 +1,27 @@
+.infoHolder {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding: 50px 100px;
+}
+
+.infoHolder .title {
+  font-size: 3.5rem;
+}
+
+.infoHolder .info {
+  font-size: 1.8rem;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .infoHolder {
+    padding: 30px 50px;
+  }
+
+  .infoHolder .title {
+    font-size: 2.8rem;
+  }
+}
