@@ -1,0 +1,35 @@
+# Image Colorizer - Backend Server
+
+This directory contains the production-ready backend server for the image colorization application.
+
+1. Core Components:
+   - main.py: FastAPI server implementation
+   - requirements.txt: Python dependencies
+   - Image_Colorization_2/: Trained CNN model directory
+
+2. Server Features:
+   - FastAPI-based REST API
+   - Image processing endpoints
+   - CNN model integration
+   - CORS support for cross-origin requests
+
+3. File Structure:
+   - main.py: Contains all server logic and API endpoints
+   - requirements.txt: Lists all required Python packages
+   - Image_Colorization_2/: Contains the trained model files
+   - Temporary files (my-image.png, result.png) are generated during processing
+
+4. API Endpoints:
+   - GET /: Health check endpoint
+   - POST /: Image colorization endpoint
+     - Accepts base64 encoded images
+     - Returns colorized image in base64 format
+
+5. Processing Flow:
+   1. Receives image data
+   2. Converts to LAB color space
+   3. Processes through CNN model
+   4. Converts back to RGB
+   5. Returns colorized result
+
+Note: Temporary files (my-image.png, result.png) are generated during processing and can be safely deleted. 

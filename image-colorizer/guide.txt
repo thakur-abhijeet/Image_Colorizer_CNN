@@ -1,0 +1,26 @@
+# Image Colorizer - Original Development Directory
+
+This directory contains the initial development version of the image colorization application. It includes:
+
+1. Development Files:
+   - server_for_image_colorization.ipynb: Jupyter notebook containing the initial model development and testing
+   - src/: React TypeScript source code for the frontend
+   - public/: Static assets for the frontend
+
+2. Configuration Files:
+   - package.json: Node.js dependencies and scripts
+   - tsconfig.json: TypeScript configuration
+   - vite.config.ts: Vite bundler configuration
+
+3. Purpose:
+   - This directory serves as the development environment
+   - Contains experimental features and testing code
+   - Used for initial model development and testing
+   - Not recommended for production use
+
+4. Key Components:
+   - Jupyter notebook for model development
+   - React TypeScript frontend
+   - Development configuration files
+
+Note: This directory is kept for reference and development purposes. For production use, please refer to the image-colorizer-public-client and image-colorizer-public-server directories. 
