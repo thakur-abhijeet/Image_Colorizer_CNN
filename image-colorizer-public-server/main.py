@@ -1,27 +1,23 @@
 from fastapi import FastAPI
-from keras.layers import Conv2D, UpSampling2D
-from keras.models import Sequential
-from keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.utils import img_to_array, load_img
 from skimage.color import rgb2lab, lab2rgb
 from skimage.transform import resize
 from skimage.io import imsave
 import numpy as np
-import tensorflow as tf
-from tensorflow import keras
-import os
-import io, base64
+import io
+import base64
 from PIL import Image
-from starlette.responses import FileResponse
-from starlette.middleware import Middleware
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 app = FastAPI()
 
-model_path='./Image_Colorization_2'
+#model_path='./Image_Colorization_2'
 # model_path='./Image_Colorization_3'
-model = keras.models.load_model(model_path)
+from tensorflow.keras.models import load_model
+model = load_model("./Image_Colorization_2/")
+
+#model = keras.models.load_model(model_path)
 
 
 app = FastAPI()
